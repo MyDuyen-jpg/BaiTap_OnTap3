@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imgCLoth_bag"
+        android:layout_width="146dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a_teveloper_tester_can_never_be_friend" />
+
+    <TextView
+        android:id="@+id/tvName_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCLoth_bag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSize_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvName_bag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvName_bag"
+        app:layout_constraintTop_toBottomOf="@+id/tvName_bag" />
+
+    <TextView
+        android:id="@+id/tvPrice_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvSize_bag"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/tvSize_bag"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize_bag" />
+
+    <TextView
+        android:id="@+id/tvSo_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_plusBag"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_plusBag"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_plusBag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_plusBag"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSize_bag"
+        app:layout_constraintStart_toEndOf="@+id/tvSize_bag"
+        app:layout_constraintTop_toTopOf="@+id/tvSize_bag"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/btn_plus" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_minusBag"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSize_bag"
+        app:layout_constraintStart_toEndOf="@+id/tvSo_bag"
+        app:layout_constraintTop_toTopOf="@+id/tvSize_bag"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/btn_plus" />
+</androidx.constraintlayout.widget.ConstraintLayout>
